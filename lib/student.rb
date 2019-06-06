@@ -15,7 +15,7 @@ class Student
   end
 
   def add_student_attributes(attributes_hash) #instance variables assign to key,value
-    attributes_hash.each do |key,value|
+    attributes_hash.each do |key,value| 
       if key == :twitter
         @twitter = value
       elsif

@@ -14,6 +14,7 @@ class Student
     students_array.each{|student| Student.new(student)}
   end
 
+#uses the Scraper class to get a hash of a given students attributes and uses that hash to set additional attributes for that student.
   def add_student_attributes(attributes_hash) #instance variables assign to key,value
     attributes_hash.each do |key,value| 
       if key == :twitter
